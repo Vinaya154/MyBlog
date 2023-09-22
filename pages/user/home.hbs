@@ -41,20 +41,18 @@
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+           
           </div>
 {{userDetails.name}}
 <button class="btn btn-primary mx-2" onclick="logout()">logout</button>
+<a href="/createBlog"><button class="btn btn-primary mx-2" onclick="logout()">create blog</button></a>
         </div>
       </nav>
       <div class="container">
         <div class="row d-flex gap-2">
           {{#each data}}
           <div class="card col-6 col-md-4 col-lg-3 col-xl-2" style="width:18rem;">
-            <a href="/detailedView?id={{this._id}}&file={{this.images.[0].filename}}">
+            <a href="/detailedView?id={{this._id}}">
             <img src="/uploads/{{this.images.[0].filename}}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="Elegance">Elegance{{this.peak}}</h5>

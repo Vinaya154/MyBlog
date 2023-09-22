@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="d-flex flex-column justify-content-center align-items-center vh-100 ">
+<form action="/createBlog?id={{userDetails._id}}" method="post" enctype="multipart/form-data" id="createBlog">  
+<div class="form-group">
+            <label for="inputDeliveryDate" class="col-lg-2 control-label"> Category</label>
+            <div class="col-lg-10">
+               <select name="Category"  id="" class="form-control">
+                <option value="Tourism">Tourism</option>
+                <option value="Business">Business</option>
+                <option value="Health">Health Care</option>
+                <option value="Movies">Movies </option>
+               </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-2 control-label">Attachment</label>
+                <div class="col-lg-10">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <span class=" btn btn-info btn-file">
+                                Browse<input type="file" multiple name="images" id="imageInput" accept="image/*" onchange="showImages()"  >
+                            </span>
+                        </span>
+                         <div id="imagePreview"></div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="form-group">
+            <label for="inputComment" class="col-lg-2 control-label">Contents</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="10" id="inputComment" name="content"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <input type="submit"  value="Upload"class="btn btn-success">
+            </div>
+        </div>
+</fieldset>
+</form>
+   </div>
+   <script src="/adminScript.js"></script>
+</body>
+</html>

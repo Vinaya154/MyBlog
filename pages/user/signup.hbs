@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+        background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+      }
+      .perfect{
+        text-align: center;
+  padding-top: 300px;
+  font-size: x-large;
+  
+      }
+
+</style>
 </head>
-<body>
-    <div>
-        <input type="text" name="name" id="name" placeholder="name"><br>
-        <input type="text" name="email" id="email" placeholder="email"><br>
-        <input type="password" name="password" id="password" placeholder="password"><br>
-        <input type="password" name="password2" id="password2" placeholder="password2"><br>
-        <input type="submit" value="submit" onclick="doSignUp()" >
-        <span>not a registered user<a href="/signup" style="color: blueviolet;">signup here</a></span>
+<body >
+
+
+     <div class="perfect">
+      
+        <input type="text" name="name" id="name" placeholder="name"style="font-size:large;"><br>
+        <input type="text" name="email" id="email" placeholder="email" style="font-size:large;"><br>
+        <input type="password" name="password" id="password" placeholder="password" style="font-size:large;"><br>
+        <input type="password" name="password2" id="password2" placeholder="password2" style="font-size:large;"><br>
+        <input type="submit" value="submit" onclick="doSignUp()" style="font-size:large;" >
+        <span>not a registered user<a href="/signup" style="color: green;">signup here</a></span>
     </div>
     <script src="/script.js"></script>
 </body>
